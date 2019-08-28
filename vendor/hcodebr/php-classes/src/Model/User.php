@@ -196,7 +196,7 @@ class User extends Model{
 			INNER JOIN tb_users b USING(iduser)
 			INNER JOIN tb_persons c USING(idperson)
 			WHERE
-				a.idrecovery = 57 
+				a.idrecovery = :idrecovery 
 			    AND
 			    a.dtrecovery IS NULL
 			    AND
